@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Fullstack para Principiantes - Aprende Desarrollo Web Completo</title>
+    <meta name="description" content="Conviértete en desarrollador fullstack desde cero. Aprende HTML, CSS, JavaScript, React, Node.js y más. Acceso de por vida y certificación incluida.">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">FullStack Pro</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#curso" class="nav-link">El Curso</a></li>
+                <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                <li><a href="#precios" class="nav-link">Precios</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Conviértete en <span class="highlight">Desarrollador FullStack</span> desde Cero</h1>
+                <p class="hero-description">
+                    Aprende las tecnologías más demandadas del mercado: HTML, CSS, JavaScript, React, Node.js, MongoDB y más. 
+                    Sin experiencia previa necesaria.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Estudiantes</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.9</span>
+                        <span class="stat-label">★ Calificación</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">40h</span>
+                        <span class="stat-label">de Contenido</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">empieza ahora</button>
+                    <button class="btn btn-secondary">Ver Demo Gratis</button>
+                    <input type="text" value="hola">
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-preview">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="file-name">app.js</span>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line"><span class="keyword">const</span> <span class="variable">app</span> = <span class="function">express</span>();</div>
+                        <div class="code-line"><span class="keyword">app</span>.<span class="method">get</span>(<span class="string">'/api/users'</span>, <span class="keyword">async</span> (req, res) => {</div>
+                        <div class="code-line">  <span class="keyword">const</span> <span class="variable">users</span> = <span class="keyword">await</span> <span class="function">User</span>.<span class="method">find</span>();</div>
+                        <div class="code-line">  res.<span class="method">json</span>(users);</div>
+                        <div class="code-line">});</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Section -->
+    <section id="curso" class="course">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Qué aprenderás en este curso?</h2>
+                <p class="section-description">Un programa completo diseñado para llevarte de principiante a desarrollador fullstack profesional</p>
+            </div>
+            
+            <div class="course-modules">
+                <div class="module">
+                    <div class="module-icon">🎨</div>
+                    <h3 class="module-title">Frontend Development</h3>
+                    <ul class="module-list">
+                        <li>HTML5 semántico y accesible</li>
+                        <li>CSS3 avanzado y Flexbox/Grid</li>
+                        <li>JavaScript ES6+ y DOM</li>
+                        <li>React.js y componentes</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                
+                <div class="module">
+                    <div class="module-icon">⚙️</div>
+                    <h3 class="module-title">Backend Development</h3>
+                    <ul class="module-list">
+                        <li>Node.js y Express.js</li>
+                        <li>APIs REST y GraphQL</li>
+                        <li>Autenticación y autorización</li>
+                        <li>Bases de datos con MongoDB</li>
+                        <li>Deployment y hosting</li>
+                    </ul>
+                </div>
+                
+                <div class="module">
+                    <div class="module-icon">🛠️</div>
+                    <h3 class="module-title">Herramientas y Mejores Prácticas</h3>
+                    <ul class="module-list">
+                        <li>Git y control de versiones</li>
+                        <li>Testing y debugging</li>
+                        <li>Webpack y build tools</li>
+                        <li>Metodologías ágiles</li>
+                        <li>Portafolio profesional</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="course-benefits">
+                <h3 class="benefits-title">¿Por qué elegir nuestro curso?</h3>
+                <div class="benefits-grid">
+                    <div class="benefit">
+                        <div class="benefit-icon">📚</div>
+                        <h4>Contenido Actualizado</h4>
+                        <p>Siempre al día con las últimas tecnologías y tendencias del mercado</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-icon">👨‍🏫</div>
+                        <h4>Instructor Experto</h4>
+                        <p>Aprende de desarrolladores con años de experiencia en la industria</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-icon">🏆</div>
+                        <h4>Certificación</h4>
+                        <p>Obtén un certificado oficial al completar el curso</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-icon">💬</div>
+                        <h4>Comunidad Activa</h4>
+                        <p>Únete a nuestra comunidad de desarrolladores y networking</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-icon">📱</div>
+                        <h4>Acceso Móvil</h4>
+                        <p>Aprende desde cualquier dispositivo, cuando y donde quieras</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-icon">∞</div>
+                        <h4>Acceso de por Vida</h4>
+                        <p>Una vez que te inscribes, tienes acceso para siempre</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Lo que dicen nuestros estudiantes</h2>
+                <p class="section-description">Más de 500 estudiantes han transformado sus carreras</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"Increíble curso. Pasé de no saber nada de programación a conseguir mi primer trabajo como desarrollador en 6 meses."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="María García" class="author-image">
+                        <div class="author-info">
+                            <h4>María García</h4>
+                            <span>Frontend Developer @ TechCorp</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"El mejor curso que he tomado. Los proyectos prácticos realmente te preparan para el mundo real."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Carlos Ruiz" class="author-image">
+                        <div class="author-info">
+                            <h4>Carlos Ruiz</h4>
+                            <span>Fullstack Developer @ StartupXYZ</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"Excelente metodología y soporte. Los profesores siempre están disponibles para ayudar."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Ana López" class="author-image">
+                        <div class="author-info">
+                            <h4>Ana López</h4>
+                            <span>Backend Developer @ DataTech</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="precios" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Elige tu plan</h2>
+                <p class="section-description">Opciones flexibles para todos los presupuestos</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Básico</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">299</span>
+                            <span class="period">pago único</span>
+                        </div>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li>✅ Acceso completo al curso</li>
+                            <li>✅ 40+ horas de contenido</li>
+                            <li>✅ Proyectos prácticos</li>
+                            <li>✅ Certificado de finalización</li>
+                            <li>❌ Mentoría personalizada</li>
+                            <li>❌ Revisión de código</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline">Elegir Plan</button>
+                </div>
+                
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Más Popular</div>
+                    <div class="card-header">
+                        <h3>Pro</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">499</span>
+                            <span class="period">pago único</span>
+                        </div>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li>✅ Todo lo del plan Básico</li>
+                            <li>✅ Mentoría personalizada</li>
+                            <li>✅ Revisión de código</li>
+                            <li>✅ Acceso a comunidad privada</li>
+                            <li>✅ Bonus: Curso de entrevistas</li>
+                            <li>✅ Soporte prioritario</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary">Elegir Plan</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">799</span>
+                            <span class="period">pago único</span>
+                        </div>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li>✅ Todo lo del plan Pro</li>
+                            <li>✅ Sesiones 1-on-1 con instructor</li>
+                            <li>✅ Ayuda con portafolio</li>
+                            <li>✅ Preparación para entrevistas</li>
+                            <li>✅ Garantía de empleo*</li>
+                            <li>✅ Acceso de por vida</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline">Elegir Plan</button>
+                </div>
+            </div>
+            
+            <div class="money-back">
+                <div class="guarantee">
+                    <span class="guarantee-icon">🛡️</span>
+                    <div>
+                        <h4>Garantía de 30 días</h4>
+                        <p>Si no estás satisfecho, te devolvemos tu dinero</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Tienes preguntas?</h2>
+                <p class="section-description">Estamos aquí para ayudarte a dar el siguiente paso en tu carrera</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contáctanos</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span>info@fullstackpro.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🕒</span>
+                        <span>Lun - Vie: 9:00 AM - 6:00 PM</span>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="subject" name="subject" required>
+                            <option value="">Selecciona un tema</option>
+                            <option value="general">Consulta general</option>
+                            <option value="pricing">Preguntas sobre precios</option>
+                            <option value="technical">Soporte técnico</option>
+                            <option value="career">Consulta sobre carrera</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🚀</span>
+                        <span class="logo-text">FullStack pro</span>
+                    </div>
+                    <p>Transformando carreras a través de la educación en desarrollo web.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📧</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Curso</h4>
+                    <ul>
+                        <li><a href="#curso">Contenido</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#precios">Precios</a></li>
+                        <li><a href="#">Demo Gratis</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Comunidad</a></li>
+                        <li><a href="#">Carreras</a></li>
+                        <li><a href="#">Afiliados</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FullStack universidad de cataluna</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
